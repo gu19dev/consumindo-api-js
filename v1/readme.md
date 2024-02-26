@@ -4,11 +4,14 @@ A API "ViaCEP" é um webservice gratuito de alto desempenho para consulta de Có
 
 ## Sobre o código
 
-O código se encontra no arquivo ead-multiples-cep.http. Basicamente, é um script JavaScript que, primeiramente, recebe através de um "input" um CEP no formato de 8 números, verifica se estes números estão validados (estão corretos) e, se estiverem, retorna um JSON com os dados da API.
+O código se encontra no arquivo 
+ead-multiples-cep.http. Basicamente, é um script JavaScript que, primeiramente, recebe através de um "input" um CEP no formato de 8 números, verifica se estes números estão validados (estão corretos) e, se estiverem, retorna um JSON com os dados da API.
 
 ### Explicando o código
 
-O código é interpretado através do Node.js e utiliza os módulos nativos do ambiente como o eadline e https. O módulo eadline é semelhante ao input disponível nos navegadores, porém, para este módulo do Node.js, ele permite ler a entrada do usuário a partir do terminal.
+O código é interpretado através do Node.js e utiliza os módulos nativos do ambiente como o 
+readline e https. 
+O módulo readline é semelhante ao input disponível nos navegadores, porém, para este módulo do Node.js, ele permite ler a entrada do usuário a partir do terminal.
 
 A função getCep solicita ao usuário que digite um CEP. Quando o usuário digita o CEP e pressiona Enter, a função de callback é chamada com o CEP digitado pelo usuário.
 
