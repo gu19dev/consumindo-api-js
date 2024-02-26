@@ -1,0 +1,35 @@
+const readline = require('readline');
+const https = require('https');
+
+const reader = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+reader.question('Digite o CEP: ', (cep) => {
+  // Validar o CEP (opcional)
+
+  const options = {
+    hostname: 'viacep.com.br',
+    path: `/ws/${cep}/json/`,
+    method: 'GET'
+  };
+
+  const req = https.request(options, (res) => {
+    let data = '';
+
+    res.on('data', (chunk) => {
+      data += chunk;
+    });
+
+    res.on('end', () => {
+      // Exibir os dados do endereço
+      console.log(JSON.parse(data));
+    });
+  });
+
+  req.end();
+
+  reader.close();
+});
+  
