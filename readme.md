@@ -101,13 +101,13 @@ Para clonar o repositório e ter uma cópia do código em sua máquina local, si
 5. Digite o seguinte comando no terminal, substituindo `<URL-do-repositório>` pela URL que você copiou:
 
 ```
-git clone <URL-do-repositório>
+git clone https://github.com/gu19dev/consumindo-api-js
 ```
 
 6. Navegue até o diretório clonado:
 
 ```
-cd nome-do-repositório
+cd consumindo-api-js
 ```
 
 7. Execute `npm install` para instalar as dependências, se necessário.
