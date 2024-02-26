@@ -11,7 +11,7 @@ Você pode acessar o site da ViaCEP [aqui](https://viacep.com.br/).
 
 Para realizar as requisições, foi optado por utilizar os módulos nativos do Node.js, 'https' e 'readline'. Esses módulos fornecem funcionalidades essenciais para lidar com requisições HTTP e para interagir com a entrada do usuário no terminal, respectivamente.
 
-O código se encontra no arquivo `read-multiples-cep.http`. Basicamente, é um script JavaScript que, primeiramente, recebe através de um "input" um CEP no formato de 8 números, verifica se estes números estão validados (estão corretos) e, se estiverem, retorna um JSON com os dados da API.
+O código se encontra no arquivo `lookup-multiples-cep.http`. Basicamente, é um script JavaScript que, primeiramente, recebe através de um "input" um CEP no formato de 8 números, verifica se estes números estão validados (estão corretos) e, se estiverem, retorna um JSON com os dados da API.
 
 ##
 
